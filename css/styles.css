@@ -1,9 +1,41 @@
+.navbar {
+    background-color: black;
+}
+
 .logo-pic {
-    width: 85px;
+    width: 90px;
     height: 100px;
 }
 
 .nav-item a {
     color: #fff10d;
     font-size: 21px;
+}
+
+.welcome img {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+#content-img1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#img-content-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vh;
+    font-weight: 550;
+    color: black;
+    margin: auto;
+}
+
+.welcome img.content-img2,
+img.content-img3 {
+    display: none;
 }
