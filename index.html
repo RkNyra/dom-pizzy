@@ -70,8 +70,8 @@
                 <form>
                     <div>
                         <label for="Pizza-Sizes">Pizza Size</label>
-                        <select>
-                      <option value="0">Select Size</option>
+                        <select required>
+                      <option value="">Select Size</option>
                       <option value="1">Extra Large</option> <!-- consider adding an image to these opitons -->
                       <option value="2">Large</option>
                       <option value="3">Medium</option>
@@ -79,27 +79,27 @@
                     </select>
 
                         <label for="Crusts">Crust-Options</label>
-                        <select>
-                      <option value="0">Select Crust</option>
+                        <select required>
+                      <option value="">Select Crust</option>
                       <option value="1">Double-Delight</option>
                       <option value="2">Normal</option>   <!-- get a fun name for these choices -->
                       <option value="3">Crunchy</option>
                     </select>
 
                         <label for="Toppings">Toppings</label>
-                        <select>
-                      <option value="0">Select Toppings</option>
+                        <select required>
+                      <option value="">Select Toppings</option>
                       <option value="1">Surprise Me!</option>
                       <option value="2">Familiar</option>
                     </select>
                     </div>
                     <div>
                         <label for="Number of Oders"> Number of Oders</label>
-                        <input name="Number-of-Oders" type="number">
+                        <input name="Number-of-Oders" type="number" required>
 
                         <label for="Delivery-Point">Select Delivery Point</label>
-                        <select>
-                          <option value="0">Select Delivery Point</option>
+                        <select required>
+                          <option value="">Select Delivery Point</option>
                           <option value="1">Deliver to your location</option>
                           <!-- insert prompt to choose location, and add phone details -->
                           <option value="2">Pick up from Dom-Pizzy</option>

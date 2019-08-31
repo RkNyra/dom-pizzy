@@ -14,7 +14,7 @@
 
 .welcome img {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     opacity: 0.5;
 }
 
@@ -50,4 +50,5 @@ img.content-img3,
 
 .order {
     height: 50vh;
+    width: 100%;
 }
