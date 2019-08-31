@@ -47,3 +47,7 @@ img.content-img3,
 .content3 {
     display: none;
 }
+
+.order {
+    height: 50vh;
+}

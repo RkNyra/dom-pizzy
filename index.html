@@ -32,10 +32,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
-
                 </ul>
-
-
         </nav>
 
 
@@ -68,11 +65,53 @@
         <div class="row ">
             <!-- row with two columns i.e. order and summary -->
 
-            <div class="col-md-6 order ">
+            <div class="col-md-10 order">
                 <!-- insert form to make the order -->
+                <form>
+                    <div>
+                        <label for="Pizza-Sizes">Pizza Size</label>
+                        <select>
+                      <option value="0">Select Size</option>
+                      <option value="1">Extra Large</option> <!-- consider adding an image to these opitons -->
+                      <option value="2">Large</option>
+                      <option value="3">Medium</option>
+                      <option value="4">Small</option>
+                    </select>
+
+                        <label for="Crusts">Crust-Options</label>
+                        <select>
+                      <option value="0">Select Crust</option>
+                      <option value="1">Double-Delight</option>
+                      <option value="2">Normal</option>   <!-- get a fun name for these choices -->
+                      <option value="3">Crunchy</option>
+                    </select>
+
+                        <label for="Toppings">Toppings</label>
+                        <select>
+                      <option value="0">Select Toppings</option>
+                      <option value="1">Surprise Me!</option>
+                      <option value="2">Familiar</option>
+                    </select>
+                    </div>
+                    <div>
+                        <label for="Number of Oders"> Number of Oders</label>
+                        <input name="Number-of-Oders" type="number">
+
+                        <label for="Delivery-Point">Select Delivery Point</label>
+                        <select>
+                          <option value="0">Select Delivery Point</option>
+                          <option value="1">Deliver to your location</option>
+                          <!-- insert prompt to choose location, and add phone details -->
+                          <option value="2">Pick up from Dom-Pizzy</option>
+                        </select>
+                    </div>
+                    <div class="check-out">
+                        <button type="submit" value="Check-Out">Check-Out</button>
+                    </div>
+                </form>
             </div>
 
-            <div class="col-md-6 summary ">
+            <div class="col-md-2 summary ">
                 <!-- insert REAL-TIME summary dets here up until subtotal and grand total-->
             </div>
 
