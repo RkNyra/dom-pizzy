@@ -18,13 +18,13 @@
     opacity: 0.5;
 }
 
-#content-img1 {
+#content-img {
     position: relative;
     text-align: center;
     color: white;
 }
 
-#img-content-text {
+#img-content-text1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,7 +35,15 @@
     margin: auto;
 }
 
-.welcome img.content-img2,
-img.content-img3 {
+
+/* .welcome img.content-img2,
+img.content-img3,
+.content-img2,
+.content-img3 {
+    display: none;
+} */
+
+.content2,
+.content3 {
     display: none;
 }
