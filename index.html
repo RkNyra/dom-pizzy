@@ -68,63 +68,63 @@
         <div class="row order-n-summary">
             <!-- row with two columns i.e. order and summary -->
 
-            <div class="col-md-10">
-                <div id="order"><img src="images/pizza-inhouse-service.jpg">
-                    <h2>Make Your Order Today!</h2>
+            <div class="col-lg-10 displayCenter">
+                <div class="col-lg-4" id="order"><img src="images/pizza-inhouse-service.jpg">
+                    <h4>Make Your Order Today!</h4>
                 </div>
-                <div class="order-form">
+                <div class="order-form col-lg-6">
                     <form>
                         <div>
                             <label for="Pizza-Sizes">Pizza Size</label>
-                            <select required>
+                            <select class="form-control" required>
                       <option value="">Select Size</option>
                       <option value="1">Extra Large, 900/-</option> <!-- consider adding an image to these opitons -->
                       <option value="2">Large, 700/-</option>
                       <option value="3">Medium, 500/-</option>
                       <option value="4">Small, 300/-</option>
-                    </select>
+                    </select><br>
 
                             <label for="Crusts">Crust-Options</label>
-                            <select required>
+                            <select class="form-control" required>
                       <option value="">Select Crust</option>
                       <option value="1">Double-Delight,300</option>
                       <option value="2">Regular, free</option>
-                    </select>
+                    </select><br>
 
                             <label for="Toppings">Toppings</label>
-                            <select required>
+                            <select class="form-control" required>
                       <option value="">Select Toppings</option>
                       <option value="1">BBQ-Chicken, 300/-</option>
                       <option value="2">Meat Deluxe, 200/-</option>
                       <option value="3">Margherita, 250/-</option>
-                    </select>
-                            <label for="Extra Toppings">Toppings</label>
-                            <select required>
+                    </select><br>
+                            <label for="Extra Toppings">Extra Toppings</label>
+                            <select class="form-control" required>
                       <option value="">Select Extra Toppings</option>
                       <option value="1">Surprise Me! 150/-</option>
                       <option value="2">Familiar (no-extra-topping), free</option>
-                    </select>
+                    </select><br>
                         </div>
                         <div>
                             <label for="Number of Oders"> Number of Oders</label>
-                            <input name="Number-of-Oders" type="number" required>
+                            <input class="form-control" name="Number-of-Oders" type="number" required><br>
 
                             <label for="Delivery-Point">Select Delivery Point</label>
-                            <select required>
+                            <select class="form-control" required>
                           <option value="">Select Delivery Point</option>
                           <option value="1">Deliver to your location</option>
                           <!-- insert prompt to choose location, and add phone details -->
                           <option value="2">Pick up from Dom-Pizzy</option>
-                        </select>
+                        </select><br>
                         </div>
                         <div class="check-out">
-                            <button type="submit" value="Check-Out">Check-Out</button>
+                            <button class="btn btn-primary" type="submit" value="Check-Out">Check-Out</button>
                         </div>
                     </form>
                 </div>
 
 
-                <div id="sumary" class="col-md-2">
+                <div id="sumary" class="col-lg-2">
                     <!-- insert REAL-TIME summary dets here up until subtotal and grand total-->
                 </div>
             </div>
