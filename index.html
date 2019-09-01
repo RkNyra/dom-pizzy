@@ -34,6 +34,7 @@
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
+            </div>
         </nav>
 
 
@@ -63,7 +64,8 @@
 
         </div>
 
-        <div class="row ">
+
+        <div class="row">
             <!-- row with two columns i.e. order and summary -->
 
             <div class="col-md-10 order">
@@ -86,8 +88,8 @@
                             <select required>
                       <option value="">Select Crust</option>
                       <option value="1">Double-Delight</option>
-                      <option value="2">Normal</option>   <!-- get a fun name for these choices -->
-                      <option value="3">Crunchy</option>
+                      <option value="2">Regular</option>   <!-- get a fun name for these choices -->
+                      <option value="3">Crunchy Crust</option>
                     </select>
 
                             <label for="Toppings">Toppings</label>
@@ -114,26 +116,35 @@
                         </div>
                     </form>
                 </div>
+
+
+                <div id="sumary" class="col-md-2">
+                    <!-- insert REAL-TIME summary dets here up until subtotal and grand total-->
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div id="sumary" class="col-md-2">
-                <!-- insert REAL-TIME summary dets here up until subtotal and grand total-->
-            </div>
+    <div class="feedback">
 
-        </div>
+        <form id="feedback-form">
+            <input name="name" type="text" placeholder="Name">
+            <input name="email" type="email" placeholder="Email"><br>
+            <textarea name="message" placeholder="Write your feedback here" required></textarea>
+        </form>
+        <!-- insert feedback form. Add star-rating if possible -->
+    </div>
 
-        <div class="feedback ">
 
-            <!-- insert feedback form. Add star-rating if possible -->
-        </div>
-        <div class="social-icons ">
-            <!-- insert social icons with msg "Follow Us On " OR "Share your experience on... " -->
-        </div>
-        <div class="footer ">
-            <!-- insert copyright here e.g. "Developed by RK Nyra &&Copy 2019 "-->
-            <!-- Developed by RK Nyra &COPY; August 2019" -->
-        </div>
-        </div>
+    <div class="social-icons ">
+
+        <!-- insert social icons with msg "Follow Us On " OR "Share your experience on... " -->
+    </div>
+    <div class="footer ">
+        <!-- insert copyright here e.g. "Developed by RK Nyra &&Copy 2019 "-->
+        <!-- Developed by RK Nyra &COPY; August 2019" -->
+    </div>
+    </div>
 </body>
 
 </html>

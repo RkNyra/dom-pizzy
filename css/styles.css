@@ -77,3 +77,7 @@ img.content-img3,
     text-align: center;
     line-height: 2.5em;
 }
+
+.feedback {
+    height: 40vh;
+}
