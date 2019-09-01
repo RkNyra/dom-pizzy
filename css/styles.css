@@ -23,7 +23,7 @@ body {
 
 .welcome img {
     width: 100vw;
-    height: 65vh;
+    height: 50vh;
     opacity: 0.5;
 }
 
@@ -60,4 +60,20 @@ img.content-img3,
 .order {
     height: 50vh;
     width: 100%;
+}
+
+#order {
+    display: inline-flex;
+    align-items: center;
+}
+
+#order img {
+    width: 200px;
+    height: 200px;
+}
+
+.order-form {
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5em;
 }
