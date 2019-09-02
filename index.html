@@ -73,41 +73,43 @@
                     <h4>Make Your Order Today!</h4>
                 </div>
                 <div class="order-form col-lg-6">
-                    <form>
+                    <form id="orderPizza">
                         <div>
                             <label for="Pizza-Sizes">Pizza Size</label>
-                            <select class="form-control" required>
+                            <select id="pizzaSize" class="form-control" required>
                       <option value="">Select Size</option>
-                      <option value="1">Extra Large, 900/-</option> <!-- consider adding an image to these opitons -->
-                      <option value="2">Large, 700/-</option>
-                      <option value="3">Medium, 500/-</option>
-                      <option value="4">Small, 300/-</option>
+                      <option value="Extra Large">Extra Large, 900/-</option> <!-- consider adding an image to these opitons -->
+                      <option value="Large">Large, 700/-</option>
+                      <option value="Medium">Medium, 500/-</option>
+                      <option value="Small">Small, 300/-</option>
                     </select><br>
 
                             <label for="Crusts">Crust-Options</label>
-                            <select class="form-control" required>
+                            <select id="crustOption" class="form-control" required>
                       <option value="">Select Crust</option>
-                      <option value="1">Double-Delight,300</option>
-                      <option value="2">Regular, free</option>
+                      <option value="Double-Delight">Double-Delight,300</option>
+                      <option value="Regular">Regular, free</option>
                     </select><br>
 
-                            <label for="Toppings">Toppings</label>
-                            <select class="form-control" required>
+                            <!-- <label for="Toppings">Toppings</label>
+                            <select id="toppings" class="form-control" required>
                       <option value="">Select Toppings</option>
                       <option value="1">BBQ-Chicken, 300/-</option>
                       <option value="2">Meat Deluxe, 200/-</option>
                       <option value="3">Margherita, 250/-</option>
-                    </select><br>
+                    </select><br> -->
+
                             <label for="Extra Toppings">Extra Toppings</label>
-                            <select class="form-control" required>
+                            <select id="extraToppings" class="form-control" required>
                       <option value="">Select Extra Toppings</option>
-                      <option value="1">Surprise Me! 150/-</option>
-                      <option value="2">Familiar (no-extra-topping), free</option>
+                      <option value="Surprise Me">Surprise Me! 150/-</option>
+                      <option value="Familiar">Familiar (no-extra-topping), free</option>
                     </select><br>
+
                         </div>
                         <div>
                             <label for="Number of Oders"> Number of Oders</label>
-                            <input class="form-control" name="Number-of-Oders" type="number" required><br>
+                            <input id="numberOfOrders" class="form-control" name="Number-of-Oders" type="number" required><br>
 
 
                             </select><br>
@@ -124,11 +126,14 @@
                         <!-- insert REAL-TIME summary dets here up until subtotal and grand total-->
                     </div>
 
-                    <div> <label for="Delivery-Point">Select Delivery Point</label>
-                        <select class="form-control" required>
+                    <div>
+                        <label for="Delivery-Point">Select Delivery Point</label>
+                        <select id="deliveryPoint" class="form-control" required>
                           <option value="">Select Delivery Point</option>
                           <option value="1">Deliver to your location</option>
+
                           <!-- insert prompt to choose location, and add phone details -->
+                          
                           <option value="2">Pick up from Dom-Pizzy</option>
                           </select>
                     </div>
