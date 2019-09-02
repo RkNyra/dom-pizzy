@@ -74,9 +74,9 @@
                 </div>
                 <div class="order-form col-lg-6">
                     <form id="orderPizza">
-                        <div>
-                            <label for="Pizza-Sizes">Pizza Size</label>
-                            <select id="pizzaSize" class="form-control" required>
+
+                        <label for="Pizza-Sizes">Pizza Size</label>
+                        <select id="pizzaSize" class="form-control" required>
                       <option value="">Select Size</option>
                       <option value="Extra Large">Extra Large, 900/-</option> <!-- consider adding an image to these opitons -->
                       <option value="Large">Large, 700/-</option>
@@ -84,29 +84,28 @@
                       <option value="Small">Small, 300/-</option>
                     </select><br>
 
-                            <label for="Crusts">Crust-Options</label>
-                            <select id="crustOption" class="form-control" required>
+                        <label for="Crusts">Crust-Options</label>
+                        <select id="crustOption" class="form-control" required>
                       <option value="">Select Crust</option>
                       <option value="Double-Delight">Double-Delight,300</option>
                       <option value="Regular">Regular, free</option>
                     </select><br>
 
-                            <!-- <label for="Toppings">Toppings</label>
-                            <select id="toppings" class="form-control" required>
+                        <label for="Toppings">Toppings</label>
+                        <select id="toppings" class="form-control" required>
                       <option value="">Select Toppings</option>
-                      <option value="1">BBQ-Chicken, 300/-</option>
-                      <option value="2">Meat Deluxe, 200/-</option>
-                      <option value="3">Margherita, 250/-</option>
-                    </select><br> -->
+                      <option value="BBQ-Chicken">BBQ-Chicken, 300/-</option>
+                      <option value="Meat Deluxe">Meat Deluxe, 200/-</option>
+                      <option value="Margherita">Margherita, 250/-</option>
+                    </select><br>
 
-                            <label for="Extra Toppings">Extra Toppings</label>
-                            <select id="extraToppings" class="form-control" required>
+                        <label for="Extra Toppings">Extra Toppings</label>
+                        <select id="extraToppings" class="form-control" required>
                       <option value="">Select Extra Toppings</option>
-                      <option value="Surprise Me">Surprise Me! 150/-</option>
+                      <option value="Surprise Me">Surprise Me!-</option>
                       <option value="Familiar">Familiar (no-extra-topping), free</option>
                     </select><br>
 
-                        </div>
                         <div>
                             <label for="Number of Oders"> Number of Oders</label>
                             <input id="numberOfOrders" class="form-control" name="Number-of-Oders" type="number" required><br>
@@ -114,21 +113,28 @@
 
                             </select><br>
                         </div>
+
                         <div class="check-out">
                             <button class="btn btn-primary" type="submit" value="Check-Out">Check-Out</button>
                         </div>
+
                     </form>
                 </div>
 
 
                 <div class="col-lg-2">
-                    <div id="summary">
-                        <!-- insert REAL-TIME summary dets here up until subtotal and grand total-->
-                    </div>
+                    <div class="summary">
+                        <div id="sizeAndPrice"> </div>
+                        <div id="crustAndPrice"> </div>
+                        <div id="toppingsAndPrice"> </div>
+                        <div id="extraToppingsAndPrice"> </div>
+                        <div id="subTotal"> </div>
+                        <div id="orderNumber"> </div>
+                        <div id="grandTotal"> </div>
 
-                    <div>
-                        <label for="Delivery-Point">Select Delivery Point</label>
-                        <select id="deliveryPoint" class="form-control" required>
+                        <div>
+                            <label for="Delivery-Point">Select Delivery Point</label>
+                            <select id="deliveryPoint" class="form-control" required>
                           <option value="">Select Delivery Point</option>
                           <option value="1">Deliver to your location</option>
 
@@ -136,57 +142,57 @@
                           
                           <option value="2">Pick up from Dom-Pizzy</option>
                           </select>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
-        <div class="row share-feedback">
-            <div class="col-md-8 indent">
-                <div class="card bg-transparent">
-                    <h3>Client Feedback Form</h3>
-                    <form id="feedback-form">
-                        <label for="name">Name: </label>
-                        <input name="name" type="text" placeholder="Name"><br>
-                        <label for="Email">Email:</label>
-                        <input name="email" type="email" placeholder="Email"><br>
-                        <label for="feedback">Tell us how your experience was! You may also share your suggestions!</label><br>
-                        <textarea name="message" placeholder="Write your feedback here" required></textarea>
-                    </form>
+            <div class="row share-feedback">
+                <div class="col-md-8 indent">
+                    <div class="card bg-transparent">
+                        <h3>Client Feedback Form</h3>
+                        <form id="feedback-form">
+                            <label for="name">Name: </label>
+                            <input name="name" type="text" placeholder="Name"><br>
+                            <label for="Email">Email:</label>
+                            <input name="email" type="email" placeholder="Email"><br>
+                            <label for="feedback">Tell us how your experience was! You may also share your suggestions!</label><br>
+                            <textarea name="message" placeholder="Write your feedback here" required></textarea>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3 indent displayCenter">
-                <div class="card socialIcons">
-                    <div>
+                <div class="col-md-3 indent displayCenter">
+                    <div class="card socialIcons">
+                        <div>
 
-                        <h3>Share your experience and follow us on:</h3>
+                            <h3>Share your experience and follow us on:</h3>
 
-                        <a href="#">
-                            <img src="social icons/facebook.png" alt="facebook">
-                        </a>
+                            <a href="#">
+                                <img src="social icons/facebook.png" alt="facebook">
+                            </a>
 
-                        <a href="#">
-                            <img src="social icons/twitter.png" alt="twitter">
-                        </a>
+                            <a href="#">
+                                <img src="social icons/twitter.png" alt="twitter">
+                            </a>
 
-                        <a href="#">
-                            <img src="social icons/you_tube.png" alt="youtube">
-                        </a>
-
+                            <a href="#">
+                                <img src="social icons/you_tube.png" alt="youtube">
+                            </a>
 
 
+
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+            <div class="footer">
+                Developed by RK Nyra &COPYAugust, 2019
+
+            </div>
         </div>
-
-
-        <div class="footer">
-            Developed by RK Nyra &COPYAugust, 2019
-
-        </div>
-    </div>
 </body>
 
 </html>
