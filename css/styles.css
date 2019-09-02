@@ -133,6 +133,13 @@ textarea {
     margin-left: 17px;
 }
 
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+}
+
 .footer {
     width: 100vw;
     height: 10vh;
