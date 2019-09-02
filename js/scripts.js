@@ -147,8 +147,19 @@ $(document).ready(function() {
         $("#grandTotal").html("Grand Total Cost: " + finalTotal);
 
     });
-    deliveryPoint = $("#deliveryPoint").val();
-    console.log(deliveryPoint)
+
+    $("#deliveryPointForm").submit(function(event) {
+        event.preventDefault();
+
+        deliveryPoint = $("#deliveryPoint").val();
+        if (deliveryPoint == 1) {
+            prompt("Enter Your Name");
+            prompt("Enter Your Address");
+            prompt("Enter Your Phone Number");
+            $("#remoteLocation").html()
+        };
+
+    });
 
 
 });
