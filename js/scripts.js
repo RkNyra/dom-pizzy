@@ -61,7 +61,6 @@ $(document).ready(function() {
 
 
         numberOfOrder = $("#numberOfOrders").val();
-        deliveryPoint = $("#deliveryPoint").val();
 
 
         let pizzaSizePrice = 0;
@@ -148,5 +147,8 @@ $(document).ready(function() {
         $("#grandTotal").html("Grand Total Cost: " + finalTotal);
 
     });
+    deliveryPoint = $("#deliveryPoint").val();
+    console.log(deliveryPoint)
+
 
 });
