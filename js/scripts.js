@@ -48,5 +48,35 @@ $("#orderPizza").submit(function(event) {
     numberOfOrder = $("#numberOfOrders").val();
     deliveryPoint = $("#deliveryPoint").val();
 
+    //Business Logic
+    let pizzaSizePrice = 0;
+    let crustOptionPrice = 0;
+    let toppingsPrice = 0;
+    //to use these variables later
+
+
+
+    //find out which size was selected
+    console.log(pizzaSize)
+    $.each(pizzaSizeArray, function(key, value) {
+        if (value.name == pizzaSize) {
+            console.log("name " + value.name + " price " + value.price);
+            pizzaSizePrice == value.price;
+            return pizzaSizePrice
+        }
+    });
+
+
+    //find out which crust was selected
+    console.log(crustOption)
+    $.each(crustOptionArray, function(key, value) {
+        if (value.name == crustOption) {
+            console.log("name " + value.name + " price " + value.price);
+            crustOptionPrice == value.price;
+            return crustOptionPrice
+        }
+    });
+
+
 
 })
