@@ -58,6 +58,10 @@ img.content-img3,
     display: none;
 }
 
+.displayCenter {
+    display: flex;
+}
+
 .order-n-summary {
     background-image: linear-gradient( rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)), url(../images/dom-pizzy-client.jpg);
     background-repeat: no-repeat;
@@ -78,7 +82,6 @@ img.content-img3,
 .order-form {
     display: inline-block;
     text-align: center;
-    /* line-height: 2.5em; */
 }
 
 select {
@@ -103,12 +106,10 @@ button[type="submit"] {
     margin-bottom: 10px;
 }
 
-.feedback {
-    width: 100vw;
-    height: 40vh;
-    display: inline-flex;
-    align-items: center;
-    line-height: 1.5em;
+.share-feedback {
+    background-image: linear-gradient( rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)), url(../images/dom-pizzy-pizza2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #feedback-form input {
@@ -128,6 +129,10 @@ textarea {
     margin-top: 10px;
 }
 
+.indent {
+    margin-left: 17px;
+}
+
 .footer {
     width: 100vw;
     height: 10vh;
@@ -136,8 +141,4 @@ textarea {
     justify-content: center;
     background: black;
     color: white;
-}
-
-.displayCenter {
-    display: flex;
 }

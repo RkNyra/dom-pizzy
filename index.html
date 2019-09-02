@@ -109,13 +109,8 @@
                             <label for="Number of Oders"> Number of Oders</label>
                             <input class="form-control" name="Number-of-Oders" type="number" required><br>
 
-                            <label for="Delivery-Point">Select Delivery Point</label>
-                            <select class="form-control" required>
-                          <option value="">Select Delivery Point</option>
-                          <option value="1">Deliver to your location</option>
-                          <!-- insert prompt to choose location, and add phone details -->
-                          <option value="2">Pick up from Dom-Pizzy</option>
-                        </select><br>
+
+                            </select><br>
                         </div>
                         <div class="check-out">
                             <button class="btn btn-primary" type="submit" value="Check-Out">Check-Out</button>
@@ -124,16 +119,28 @@
                 </div>
 
 
-                <div id="sumary" class="col-lg-2">
-                    <!-- insert REAL-TIME summary dets here up until subtotal and grand total-->
+                <div class="col-lg-2">
+                    <div id="summary">
+                        <!-- insert REAL-TIME summary dets here up until subtotal and grand total-->
+                    </div>
+
+                    <div> <label for="Delivery-Point">Select Delivery Point</label>
+                        <select class="form-control" required>
+                          <option value="">Select Delivery Point</option>
+                          <option value="1">Deliver to your location</option>
+                          <!-- insert prompt to choose location, and add phone details -->
+                          <option value="2">Pick up from Dom-Pizzy</option>
+                          </select>
+                    </div>
                 </div>
             </div>
         </div>
 
 
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
+        <div class="row share-feedback">
+            <div class="col-md-5 indent">
+                <div class="card bg-transparent">
+                    <h3>Client Feedback Form</h3>
                     <form id="feedback-form">
                         <label for="name">Name: </label>
                         <input name="name" type="text" placeholder="Name"><br>
@@ -144,7 +151,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5 indent">
                 <div class="card">
                     <div class="social-icons">
                         Social icons come here
