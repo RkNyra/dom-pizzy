@@ -133,6 +133,10 @@ textarea {
     margin-left: 17px;
 }
 
+#remoteLocation {
+    display: none;
+}
+
 .socialIcons {
     display: flex;
     justify-content: center;

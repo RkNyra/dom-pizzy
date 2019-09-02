@@ -68,11 +68,11 @@
         <div class="row order-n-summary">
             <!-- row with two columns i.e. order and summary -->
 
-            <div class="col-lg-10 displayCenter">
+            <div class="col-lg-9 displayCenter">
                 <div class="col-lg-4" id="order"><img src="images/pizza-inhouse-service.jpg">
                     <h4>Make Your Order Today!</h4>
                 </div>
-                <div class="order-form col-lg-6">
+                <div class="order-form col-lg-7">
                     <form id="orderPizza">
 
                         <label for="Pizza-Sizes">Pizza Size</label>
@@ -123,7 +123,7 @@
                 </div>
 
 
-                <div class="col-lg-2">
+                <div class="col-lg-5">
                     <div class="summary">
                         <div id="sizeAndPrice"> </div>
                         <div id="crustAndPrice"> </div>
@@ -146,9 +146,16 @@
                                     <button class="btn btn-primary" type="submit" value="Confirm">Confirm</button>
                                 </div>
                             </form>
-                            <div id="remoteLocation">
 
+                            <div id="remoteLocation">
+                                <form id="submitLocaton">
+                                    <input id="userName" class="form-control" type="text" name="name" placeholder="Name"><br>
+                                    <input id="userAddress" class="form-control" type="text" name="address" placeholder="Enter Your Location Address"><br>
+                                    <input id="userTelNum" class="form-control" type="tel" name="phone-number" placeholder="07..."><br>
+                                    <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+                                </form>
                             </div>
+                            <div id="remoteThankYou"></div>
                         </div>
                     </div>
                 </div>
