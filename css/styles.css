@@ -157,3 +157,26 @@ textarea {
     background: black;
     color: white;
 }
+
+@media screen (max-width: 1024px) {
+    .welcome {
+        width: 100%;
+    }
+    .order-n-summary,
+    .col-lg-9 {
+        width: 100%;
+        display: block;
+    }
+    .form-control {
+        width: 100%;
+        display: block;
+    }
+    #deliveryPointForm {
+        width: 100%;
+        display: block;
+    }
+    .pizzaDeliveryForm {
+        width: 100%;
+        display: block;
+    }
+}

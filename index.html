@@ -121,46 +121,47 @@
 
                     </form>
                 </div>
+            </div>
 
 
-                <div class="col-lg-5">
-                    <div class="summary">
-                        <div id="sizeAndPrice"> </div>
-                        <div id="crustAndPrice"> </div>
-                        <div id="toppingsAndPrice"> </div>
-                        <div id="extraToppingsAndPrice"> </div>
-                        <div id="subTotal"> </div>
-                        <div id="orderNumber"> </div>
-                        <div id="grandTotal"> </div>
+            <div class="row">
+                <div class="summary">
+                    <div id="sizeAndPrice"> </div>
+                    <div id="crustAndPrice"> </div>
+                    <div id="toppingsAndPrice"> </div>
+                    <div id="extraToppingsAndPrice"> </div>
+                    <div id="subTotal"> </div>
+                    <div id="orderNumber"> </div>
+                    <div id="grandTotal"> </div>
 
-                        <div>
-                            <form id="deliveryPointForm">
-                                <label for="Delivery-Point">Select Delivery Point</label>
-                                <select id="deliveryPoint" class="form-control" required>
+                    <div class="pizzaDeliveryForm">
+                        <form id="deliveryPointForm">
+                            <label for="Delivery-Point">Select Delivery Point</label>
+                            <select id="deliveryPoint" class="form-control" required>
                           <option value="">Select Delivery Point</option>
                           <option value="1">Deliver to your location</option>
 
                           <option value="2">Pick up from Dom-Pizzy</option>
                           </select>
-                                <div class="confirm">
-                                    <button class="btn btn-primary" type="submit" value="Confirm">Confirm</button>
-                                </div>
-                            </form>
-
-                            <div id="remoteLocation">
-                                <form id="submitLocaton">
-                                    <input id="userName" class="form-control" type="text" name="name" placeholder="Name"><br>
-                                    <input id="userAddress" class="form-control" type="text" name="address" placeholder="Enter Your Location Address"><br>
-                                    <input id="userTelNum" class="form-control" type="tel" name="phone-number" placeholder="07..."><br>
-                                    <button class="btn btn-primary" type="submit" value="submit">Submit</button>
-                                </form>
+                            <div class="confirm">
+                                <button class="btn btn-primary" type="submit" value="Confirm">Confirm</button>
                             </div>
-                            <div id="remoteThankYou"></div>
+                        </form>
+
+                        <div id="remoteLocation">
+                            <form id="submitLocaton">
+                                <input id="userName" class="form-control" type="text" name="name" placeholder="Name"><br>
+                                <input id="userAddress" class="form-control" type="text" name="address" placeholder="Enter Your Location Address"><br>
+                                <input id="userTelNum" class="form-control" type="tel" name="phone-number" placeholder="07..."><br>
+                                <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+                            </form>
                         </div>
+                        <div id="remoteThankYou"></div>
                     </div>
                 </div>
             </div>
         </div>
+
 
 
         <div id="clientFeedback" class="row share-feedback">
