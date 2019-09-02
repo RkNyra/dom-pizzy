@@ -34,3 +34,19 @@ $(document).ready(function() {
         }
     ]
 });
+
+
+
+//UI-Logic
+$("#orderPizza").submit(function(event) {
+    event.preventDefault();
+
+    pizzaSize = $("#pizzaSize").val();
+    crustOption = $("#crustOption").val();
+    toppings = $("#toppings").val();
+
+    numberOfOrder = $("#numberOfOrders").val();
+    deliveryPoint = $("#deliveryPoint").val();
+
+
+})
