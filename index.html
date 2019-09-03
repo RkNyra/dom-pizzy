@@ -70,9 +70,9 @@
 
             <div class="col-lg-9 displayCenter">
                 <div class="col-lg-4" id="order"><img src="images/pizza-inhouse-service.jpg">
-                    <h4>Make Your Order Today!</h4>
+                    <h2>Make Your Order Today!</h2>
                 </div>
-                <div class="order-form col-lg-7">
+                <div class="order-form col-lg-5">
                     <form id="orderPizza">
 
                         <label for="Pizza-Sizes">Pizza Size</label>
@@ -108,7 +108,7 @@
 
                         <div>
                             <label for="Number of Oders"> Number of Oders</label>
-                            <input id="numberOfOrders" class="form-control" name="Number-of-Oders" type="number" required><br>
+                            <input id="numberOfOrders" class="form-control" name="Number-of-Oders" type="number" min="1" required><br>
                             <!-- to include number validation to reject negative values -->
 
 
@@ -124,16 +124,18 @@
             </div>
 
 
-            <div class="row">
+            <div class="col-lg-3">
                 <div class="summary">
-                    <div id="sizeAndPrice"> </div>
-                    <div id="crustAndPrice"> </div>
-                    <div id="toppingsAndPrice"> </div>
-                    <div id="extraToppingsAndPrice"> </div>
-                    <div id="subTotal"> </div>
-                    <div id="orderNumber"> </div>
-                    <div id="grandTotal"> </div>
-
+                    <div class="receipt">
+                        <h6>Receipt</h6>
+                        <div id="sizeAndPrice"> </div>
+                        <div id="crustAndPrice"> </div>
+                        <div id="toppingsAndPrice"> </div>
+                        <div id="extraToppingsAndPrice"> </div>
+                        <div id="subTotal"> </div>
+                        <div id="orderNumber"> </div>
+                        <div id="grandTotal"> </div>
+                    </div>
                     <div class="pizzaDeliveryForm">
                         <form id="deliveryPointForm">
                             <label for="Delivery-Point">Select Delivery Point</label>
@@ -150,9 +152,9 @@
 
                         <div id="remoteLocation">
                             <form id="submitLocaton">
-                                <input id="userName" class="form-control" type="text" name="name" placeholder="Name"><br>
-                                <input id="userAddress" class="form-control" type="text" name="address" placeholder="Enter Your Location Address"><br>
-                                <input id="userTelNum" class="form-control" type="tel" name="phone-number" placeholder="07..."><br>
+                                <input id="userName" class="form-control" type="text" name="name" placeholder="Name" required><br>
+                                <input id="userAddress" class="form-control" type="text" name="address" placeholder="Enter Your Location Address" required><br>
+                                <input id="userTelNum" class="form-control" type="number" name="phone-number" placeholder="07..." required><br>
                                 <button class="btn btn-primary" type="submit" value="submit">Submit</button>
                             </form>
                         </div>
